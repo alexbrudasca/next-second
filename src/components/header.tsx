@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Logo from '../assets/Logo.svg'
 
 export default function Header() {
 
@@ -15,7 +17,15 @@ export default function Header() {
 
   return (
     <div className="flex justify-between items-center p-4">
-        <div className="logo">Logo.</div>
+        <div className="logo">
+            <Image 
+            loading='lazy'
+            src= {Logo}
+            width={100}
+            height={100}
+            alt='logo'
+            />
+        </div>
         <div className="list">
             <ul className="flex gap-3">
                 {navLinks.map((link) =>(
