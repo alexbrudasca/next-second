@@ -19,7 +19,7 @@ export default function Header() {
         <div className="list">
             <ul className="flex gap-3">
                 {navLinks.map((link) =>(
-                    <li key={link.href} className="hover:bg-slate-400">
+                    <li key={link.href} className="transition-colors hover:text-slate-400">
                        <a href={link.href}>{link.label}</a>
                     </li>
                 ))}
