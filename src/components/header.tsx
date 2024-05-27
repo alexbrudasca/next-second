@@ -16,7 +16,7 @@ export default function Header() {
 
 
   return (
-    <div className="flex justify-between items-center p-4">
+    <div className="flex justify-between items-center p-4 fixed w-full left-0 top-0 bg-slate-400">
         <div className="logo">
             <Image 
             loading='lazy'
