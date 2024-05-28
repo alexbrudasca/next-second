@@ -9,14 +9,18 @@ export default function Header() {
             label:'Home'
         },
         {
-            href:'/contact',
-            label:'Contact'
+            href:'/posts',
+            label:'Posts'
+        },
+        {
+            href:'/quote',
+            label:'Quote'
         }
     ]
 
 
   return (
-    <div className="flex justify-between items-center p-4 fixed w-full left-0 top-0 bg-slate-400">
+    <div className="flex justify-between items-center p-4  bg-slate-400">
         <div className="logo">
             <Image 
             loading='lazy'
@@ -29,7 +33,7 @@ export default function Header() {
         <div className="list">
             <ul className="flex gap-3">
                 {navLinks.map((link) =>(
-                    <li key={link.href} className="transition-colors hover:text-slate-400">
+                    <li key={link.href} className="transition-colors hover:text-slate-900">
                        <a href={link.href}>{link.label}</a>
                     </li>
                 ))}
